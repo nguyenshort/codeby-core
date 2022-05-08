@@ -1,5 +1,5 @@
 === Codeby Core ===
-Contributors: Yuan CodeBy
+Contributors: tiencodeby
 Donate link: https://codeby.com/
 Tags: add, some, tags
 Requires at least: 5.9.3
