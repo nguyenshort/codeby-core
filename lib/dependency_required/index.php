@@ -74,13 +74,48 @@ function codeby_core_register_required_plugins() {
 			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
 //			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
 		),
-        array(
-			'name'         => 'Post Types Order', // The plugin name.
-			'slug'         => 'post-types-order', // The plugin slug (typically the folder name).
-			'source'       => 'https://downloads.wordpress.org/plugin/post-types-order.1.9.8.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+    array(
+  'name'         => 'Post Types Order', // The plugin name.
+  'slug'         => 'post-types-order', // The plugin slug (typically the folder name).
+  'source'       => 'https://downloads.wordpress.org/plugin/post-types-order.1.9.8.zip', // The plugin source.
+  'required'     => true, // If false, the plugin is only 'recommended' instead of required.
 //			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		),
+),
+array(
+'name'         => 'Elementor', // The plugin name.
+'slug'         => 'elementor', // The plugin slug (typically the folder name).
+'source'       => 'https://downloads.wordpress.org/plugin/elementor.3.6.5.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
+array(
+'name'         => 'Elementor Pro', // The plugin name.
+'slug'         => 'elementor-pro', // The plugin slug (typically the folder name).
+'source'       => 'https://my.elementor.com/?download_file=10118524&order=wc_order_XatMLgUjXEfcj&uid=04633174976ea28155dbfd68ac8c7947bb58f255581f3751727c366fcbb6f9e3&key=bdbb655a-e703-4903-85c4-c8bca92b2866&email=tranduy.riba@gmail.com', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
+array(
+'name'         => 'All-in-One WP Migration', // The plugin name.
+'slug'         => 'all-in-one-wp-migration', // The plugin slug (typically the folder name).
+'source'       => 'https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.61.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
+array(
+'name'         => 'String locator', // The plugin name.
+'slug'         => 'string-locator', // The plugin slug (typically the folder name).
+'source'       => 'https://downloads.wordpress.org/plugin/string-locator.2.5.0.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
+array(
+'name'         => 'The Paste', // The plugin name.
+'slug'         => 'the-paste', // The plugin slug (typically the folder name).
+'source'       => 'https://downloads.wordpress.org/plugin/the-paste.1.1.0.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
 	);
 
 	/*
