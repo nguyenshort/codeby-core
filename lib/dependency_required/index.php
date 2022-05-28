@@ -91,7 +91,13 @@ array(
 array(
 'name'         => 'Elementor Pro', // The plugin name.
 'slug'         => 'elementor-pro', // The plugin slug (typically the folder name).
-'external_url'       => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro-3.7.1.zip', // The plugin source.
+'source'       => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+),
+'name'         => 'Elementor Pro1', // The plugin name.
+'slug'         => 'elementor-pro1', // The plugin slug (typically the folder name).
+'source'       => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro/Archive.zip', // The plugin source.
 'required'     => true, // If false, the plugin is only 'recommended' instead of required.
 //			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
 ),
