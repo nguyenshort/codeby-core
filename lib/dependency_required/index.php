@@ -33,7 +33,7 @@
  */
 require_once PREFIX_CODEBY_CORE_DIR . '/lib/dependency_required/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'codeby_core_register_required_plugins' );
+add_action('tgmpa_register', 'codeby_core_register_required_plugins');
 
 /**
  * Register the required plugins for this theme.
@@ -52,100 +52,85 @@ add_action( 'tgmpa_register', 'codeby_core_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function codeby_core_register_required_plugins() {
-	/*
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
-	$plugins = array(
+function codeby_core_register_required_plugins()
+{
+    /*
+     * Array of plugin arrays. Required keys are name and slug.
+     * If the source is NOT from the .org repo, then source is also required.
+     */
+    $plugins = array(
 
-		// This is an example of how to include a plugin from an arbitrary external source in your theme.
-		array(
-			'name'         => 'Meta Box', // The plugin name.
-			'slug'         => 'meta-box', // The plugin slug (typically the folder name).
-			'source'       => 'https://downloads.wordpress.org/plugin/meta-box.5.6.3.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		),
+        // This is an example of how to include a plugin from an arbitrary external source in your theme.
         array(
-			'name'         => 'Post Duplicator', // The plugin name.
-			'slug'         => 'post-duplicator', // The plugin slug (typically the folder name).
-			'source'       => 'https://downloads.wordpress.org/plugin/post-duplicator.2.28.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		),
-    array(
-  'name'         => 'Post Types Order', // The plugin name.
-  'slug'         => 'post-types-order', // The plugin slug (typically the folder name).
-  'source'       => 'https://downloads.wordpress.org/plugin/post-types-order.1.9.8.zip', // The plugin source.
-  'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'Elementor', // The plugin name.
-'slug'         => 'elementor', // The plugin slug (typically the folder name).
-'source'       => 'https://downloads.wordpress.org/plugin/elementor.3.6.5.zip', // The plugin source.
-'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'Elementor Pro', // The plugin name.
-'slug'         => 'elementor-pro', // The plugin slug (typically the folder name).
-'source'       => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro.zip', // The plugin source.
-'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'Elementor Pro1', // The plugin name.
-'slug'         => 'elementor-pro1', // The plugin slug (typically the folder name).
-'source'       => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro/Archive.zip', // The plugin source.
-'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'All-in-One WP Migration', // The plugin name.
-'slug'         => 'all-in-one-wp-migration', // The plugin slug (typically the folder name).
-'source'       => 'https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.61.zip', // The plugin source.
-'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'String locator', // The plugin name.
-'slug'         => 'string-locator', // The plugin slug (typically the folder name).
-'source'       => 'https://downloads.wordpress.org/plugin/string-locator.2.5.0.zip', // The plugin source.
-// 'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-array(
-'name'         => 'The Paste', // The plugin name.
-'slug'         => 'the-paste', // The plugin slug (typically the folder name).
-'source'       => 'https://downloads.wordpress.org/plugin/the-paste.1.1.0.zip', // The plugin source.
-// 'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-//			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-),
-	);
+            'name' => 'Meta Box',
+            'slug' => 'meta-box',
+            'source' => 'https://downloads.wordpress.org/plugin/meta-box.5.6.3.zip',
+            'required' => true,
+        ),
+        array(
+            'name' => 'All-in-One WP Migration',
+            'slug' => 'all-in-one-wp-migration',
+            'source' => 'https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.61.zip',
+            'required' => true,
+        ),
+        array(
+            'name' => 'Post Duplicator',
+            'slug' => 'post-duplicator',
+            'source' => 'https://downloads.wordpress.org/plugin/post-duplicator.2.28.zip',
+        ),
+        array(
+            'name' => 'Elementor',
+            'slug' => 'elementor',
+            'source' => 'https://downloads.wordpress.org/plugin/elementor.3.6.5.zip',
+        ),
+        array(
+            'name' => 'Elementor Pro',
+            'slug' => 'elementor-pro',
+            'source' => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro.zip',
+        ),
+        array(
+            'name' => 'Post Types Order',
+            'slug' => 'post-types-order',
+            'source' => 'https://downloads.wordpress.org/plugin/post-types-order.1.9.8.zip',
+        ),
+        array(
+            'name' => 'String locator',
+            'slug' => 'string-locator',
+            'source' => 'https://downloads.wordpress.org/plugin/string-locator.2.5.0.zip',
+        ),
+        array(
+            'name' => 'The Paste',
+            'slug' => 'the-paste',
+            'source' => 'https://downloads.wordpress.org/plugin/the-paste.1.1.0.zip',
+        ),
+        array(
+            'name' => 'WP Mail SMTP',
+            'slug' => 'wp-mail-smtp',
+            'source' => 'https://downloads.wordpress.org/plugin/wp-mail-smtp.3.4.0.zip',
+        ),
+    );
 
-	/*
-	 * Array of configuration settings. Amend each line as needed.
-	 *
-	 * TGMPA will start providing localized text strings soon. If you already have translations of our standard
-	 * strings available, please help us make TGMPA even better by giving us access to these translations or by
-	 * sending in a pull-request with .po file(s) with the translations.
-	 *
-	 * Only uncomment the strings in the config array if you want to customize the strings.
-	 */
-	$config = array(
-		'id'           => 'codeby_core',                 // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                      // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins', // Menu slug.
-		'parent_slug'  => 'themes.php',            // Parent menu slug.
-		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-		'message'      => '',                      // Message to output right before the plugins table.
-	);
+    /*
+     * Array of configuration settings. Amend each line as needed.
+     *
+     * TGMPA will start providing localized text strings soon. If you already have translations of our standard
+     * strings available, please help us make TGMPA even better by giving us access to these translations or by
+     * sending in a pull-request with .po file(s) with the translations.
+     *
+     * Only uncomment the strings in the config array if you want to customize the strings.
+     */
+    $config = array(
+        'id' => 'codeby_core',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'default_path' => '',                      // Default absolute path to bundled plugins.
+        'menu' => 'tgmpa-install-plugins', // Menu slug.
+        'parent_slug' => 'themes.php',            // Parent menu slug.
+        'capability' => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+        'has_notices' => true,                    // Show admin notices or not.
+        'dismissable' => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg' => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+        'message' => '',                      // Message to output right before the plugins table.
+    );
 
-	tgmpa( $plugins, $config );
+    tgmpa($plugins, $config);
 }
