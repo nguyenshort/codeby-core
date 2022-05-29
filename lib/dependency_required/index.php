@@ -84,7 +84,7 @@ function codeby_core_register_required_plugins()
             'source' => 'https://downloads.wordpress.org/plugin/elementor.3.6.5.zip',
         ),
         array(
-            'name' => 'Elementor Pro',
+            'name' => 'Elementor Pro Zalo Duy Riba',
             'slug' => 'elementor-pro',
             'source' => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro-zalo-duy-riba.zip',
         ),
