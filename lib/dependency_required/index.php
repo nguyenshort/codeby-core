@@ -86,7 +86,7 @@ function codeby_core_register_required_plugins()
         array(
             'name' => 'Elementor Pro',
             'slug' => 'elementor-pro',
-            'source' => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro.zip',
+            'source' => 'https://github.com/tien-wordpress/webb-bash/raw/main/assets/elementor-pro-zalo-duy-riba.zip',
         ),
         array(
             'name' => 'Post Types Order',
